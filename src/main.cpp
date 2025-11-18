@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include <WebServer.h>
+#include <LittleFS.h>
 // Potentiomètre relié à GPIO 34 (Analog ADC1_CH6)
 const int potPin = 34;
 
