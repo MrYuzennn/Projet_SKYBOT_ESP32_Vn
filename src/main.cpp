@@ -9,12 +9,12 @@ const int led = 2; // Led intégrée à l'ESP32
 AsyncWebServer server(80);
 void setup()
 {
-Serial.begin(115200);
+Serial.begin(9600);
 Serial.println("\n");
 pinMode(led, OUTPUT);
 digitalWrite(led, LOW);
 //--------------------------LittleFS---------------------
-if(!LittleFS.begin()) /* Démarrage du gestionnaire de fichiers LittleFS */
+if(!LittleFS.begin(true)) /* Démarrage du gestionnaire de fichiers LittleFS */
 {
 Serial.println("Erreur LittleFS...");
 return;
