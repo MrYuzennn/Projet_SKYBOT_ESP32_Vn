@@ -6,7 +6,7 @@ const int potPin = 34;
 const char* ssid = "BTS_CIEL";
 const char* password = "ERIR1234";
 WebServer server(80);
-const int led = 2;
+const int led = 3;
 bool etatLed = 0;
 char texteEtatLed[2][10] = {"ÉTEINTE!","ALLUMÉE!"};
 void handleRoot()
